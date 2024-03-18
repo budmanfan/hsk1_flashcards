@@ -54,14 +54,15 @@ class FlashCardDeck:
         return sum(card.box == 0 for card in self.flash_cards)
     
     def get_card_set_box1(self, no_cards=10):
-        self.box1 = self.box1 + sorted(self.flash_cards, key=lambda flash_card: flash_card.box)[:no_cards]
+        not_box1 = [card for card in self.flash_cards if card not in self.box1]
+        self.box1 = self.box1 + sorted(not_box1, key=lambda flash_card: flash_card.box)[:no_cards]
         for card in self.box1:
             card.box = 1
         
     def draw_next_card(self):
         r = random.random()
         if len(self.box1) == 0:
-            self.active_card = FlashCard("-1", "No more cards", "", "")
+            self.active_card = FlashCard("-1", "No more cards", "No more cards", "")
         elif len(self.box3) > 0 and r < 0.05:
             self.active_card = random.choice(self.box3)
         elif len(self.box2) > 0 and r < 0.2:
