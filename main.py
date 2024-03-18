@@ -83,47 +83,47 @@ ctk.set_appearance_mode("light")  # "light" or "dark"
 ctk.set_default_color_theme("blue")  # Other themes available
 
 # Create the main window
-app = ctk.CTk()
-app.title("HSK1 Flashcards")
-app.geometry("400x400")
+main_window = ctk.CTk()
+main_window.title("HSK1 Flashcards")
+main_window.geometry("400x400")
 
 # Create a label with large text in the middle of the window
-l_main_word = ctk.CTkLabel(app, text=deck.get_chinese(), font=("Arial", 72))
+l_main_word = ctk.CTkLabel(main_window, text=deck.get_chinese(), font=("Arial", 72))
 l_main_word.place(relx=0.5, rely=0.3, anchor=ctk.CENTER)
 
-l_second_word = ctk.CTkLabel(app, text=deck.get_pinyin(), font=("Arial", 18))
+l_second_word = ctk.CTkLabel(main_window, text=deck.get_pinyin(), font=("Arial", 18))
 l_second_word.place(relx=0.5, rely=0.45, anchor=ctk.CENTER)
 
 # Create a button at the center bottom of the window
-b_answer = ctk.CTkButton(app, text="Answer", command=b_answer_click)
+b_answer = ctk.CTkButton(main_window, text="Answer", command=b_answer_click)
 b_answer_show()
 
-b_right = ctk.CTkButton(app, text="Right", command=b_right_click, fg_color="#32CD32")
-b_wrong = ctk.CTkButton(app, text="Wrong", command=b_wrong_click, fg_color="#FF6347")
+b_right = ctk.CTkButton(main_window, text="Right", command=b_right_click, fg_color="#32CD32")
+b_wrong = ctk.CTkButton(main_window, text="Wrong", command=b_wrong_click, fg_color="#FF6347")
 
-b_back = ctk.CTkButton(app, text="<", command=b_back_click, fg_color="lightgrey", width=30, height=30)
-b_draw_cards = ctk.CTkButton(app, text="Draw Cards", command=b_draw_cards_click, fg_color="lightgrey", width=50)
+b_back = ctk.CTkButton(main_window, text="<", command=b_back_click, fg_color="lightgrey", width=30, height=30)
+b_draw_cards = ctk.CTkButton(main_window, text="Draw Cards", command=b_draw_cards_click, fg_color="lightgrey", width=50)
 b_draw_cards_show()
 
 # Overall Stats Label
-l_title_unseen_cards = ctk.CTkLabel(app, text='Unseen Cards', font=("Arial", 12))
+l_title_unseen_cards = ctk.CTkLabel(main_window, text='Unseen Cards', font=("Arial", 12))
 l_title_unseen_cards.place(relx=0.15, rely=0.75, anchor=ctk.CENTER)
-l_unseen_cards = ctk.CTkLabel(app, text=deck.get_no_unseen(), font=("Arial", 12))
+l_unseen_cards = ctk.CTkLabel(main_window, text=deck.get_no_unseen(), font=("Arial", 12))
 l_unseen_cards.place(relx=0.15, rely=0.8, anchor=ctk.CENTER)
 
-l_title_learn_cards = ctk.CTkLabel(app, text='Learning Now', font=("Arial", 12))
+l_title_learn_cards = ctk.CTkLabel(main_window, text='Learning Now', font=("Arial", 12))
 l_title_learn_cards.place(relx=0.3766, rely=0.75, anchor=ctk.CENTER)
-l_learn_cards = ctk.CTkLabel(app, text=len(deck.box1), font=("Arial", 12))
+l_learn_cards = ctk.CTkLabel(main_window, text=len(deck.box1), font=("Arial", 12))
 l_learn_cards.place(relx=0.3766, rely=0.8, anchor=ctk.CENTER)
 
-l_title_learned_cards = ctk.CTkLabel(app, text='Learned Cards', font=("Arial", 12))
+l_title_learned_cards = ctk.CTkLabel(main_window, text='Learned Cards', font=("Arial", 12))
 l_title_learned_cards.place(relx=0.6233, rely=0.75, anchor=ctk.CENTER)
-l_learned_cards = ctk.CTkLabel(app, text=len(deck.box2), font=("Arial", 12))
+l_learned_cards = ctk.CTkLabel(main_window, text=len(deck.box2), font=("Arial", 12))
 l_learned_cards.place(relx=0.6233, rely=0.8, anchor=ctk.CENTER)
 
-l_title_master_cards = ctk.CTkLabel(app, text='Mastered Cards', font=("Arial", 12))
+l_title_master_cards = ctk.CTkLabel(main_window, text='Mastered Cards', font=("Arial", 12))
 l_title_master_cards.place(relx=0.85, rely=0.75, anchor=ctk.CENTER)
-l_master_cards = ctk.CTkLabel(app, text=len(deck.box3), font=("Arial", 12))
+l_master_cards = ctk.CTkLabel(main_window, text=len(deck.box3), font=("Arial", 12))
 l_master_cards.place(relx=0.85, rely=0.8, anchor=ctk.CENTER)
 
 deck.get_card_set_box1()
@@ -131,4 +131,4 @@ deck.draw_next_card()
 refresh_overall_stats()
 
 # Start the GUI event loop
-app.mainloop()
+main_window.mainloop()
