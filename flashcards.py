@@ -61,14 +61,18 @@ class FlashCardDeck:
         
     def draw_next_card(self):
         r = random.random()
-        if len(self.box1) == 0:
-            self.active_card = FlashCard("-1", "No more cards", "No more cards", "")
-        elif len(self.box3) > 0 and r < 0.05:
+        if len(self.box3) > 0 and r < 0.05: #random chance to draw mastered card
             self.active_card = random.choice(self.box3)
-        elif len(self.box2) > 0 and r < 0.2:
+        elif len(self.box2) > 0 and r < 0.2: #random chance to draw learned card
             self.active_card = random.choice(self.box2)
-        else:
+        elif len(self.box1) > 0:
             self.active_card = random.choice(self.box1)
+        elif len(self.box1) == 0 and len(self.box2) > 0:
+            self.active_card = random.choice(self.box2)
+        elif len(self.box2) == 0 and len(self.box3) > 0:
+            self.active_card = random.choice(self.box3)
+        else:
+            self.active_card = FlashCard("-1", "No Cards", "No Cards", "")
         
     def increase_score(self):
         self.active_card.active_score += 1
