@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from flashcards import flash_card_deck as deck
+import flashcards
 
 def refresh_overall_stats():
     l_unseen_cards.configure(text=deck.get_no_unseen())
@@ -76,7 +76,8 @@ def b_draw_cards_click():
     l_main_word.configure(text=deck.get_chinese())
     l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
-    
+
+deck = flashcards.create_deck_from_json()
 
 # Set the theme and color scheme
 ctk.set_appearance_mode("light")  # "light" or "dark"
