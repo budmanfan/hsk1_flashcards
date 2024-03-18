@@ -105,20 +105,47 @@ class FlashCardDeck:
             self.box1.append(self.active_card)
             self.active_card.box = 1
             
-    def save_words(self):
-        return
+    def save_progress(self):
+        vocab_data = {}
+        file_path = self.name + "_save.json"
+        for flash_card in self.flash_cards:
+            vocab_data[flash_card.id] = {
+                "chinese":              flash_card.chinese,
+                "pinyin":               flash_card.pinyin,
+                "english":              flash_card.english,
+                "box" :                 flash_card.box,
+                "active_score" :        flash_card.active_score,
+                "correct_guesses" :     flash_card.correct_guesses,
+                "total_guesses" :       flash_card.total_guesses
+            }
+        try:
+            with open(file_path, 'w', encoding='utf-8') as file:
+                json.dump(vocab_data, file, ensure_ascii=False, indent=4)
+                print("Data saved successfully.")
+        except Exception as e:
+            print(f"Saving failed! Error: {e}")
     
+def create_deck_from_json(path="hsk1_vocab.json", name='default', load_progress=False):
+    with open(path, 'r', encoding='utf-8') as file:
+        vocab_data = json.load(file)
+
+    flash_card_deck = FlashCardDeck(name=name)
     
-with open("hsk1_vocab.json", 'r', encoding='utf-8') as file:
-    vocab_data = json.load(file)
-
-flash_card_deck = FlashCardDeck()
-
-for idx, data in vocab_data.items():
-    flash_card = FlashCard(idx, data["chinese"], data["pinyin"], data["english"])
-    flash_card_deck.add_flash_card(flash_card)
+    if load_progress:
+        for idx, data in vocab_data.items():
+            flash_card = FlashCard(idx, data["chinese"], data["pinyin"], data["english"],
+                                   box=int(data["box"]), active_score=int(data["active_score"]),
+                                   correct_guesses=int(data["correct_guesses"]), total_guesses=int(data["total_guesses"]))
+            flash_card_deck.add_flash_card(flash_card)
+    else:
+        for idx, data in vocab_data.items():
+            flash_card = FlashCard(idx, data["chinese"], data["pinyin"], data["english"])
+            flash_card_deck.add_flash_card(flash_card)
+    
+    return flash_card_deck
     
 if __name__ == "__main__":
+    flash_card_deck = create_deck_from_json()
     flash_card_deck.get_card_set_box1()
     flash_card_deck.draw_next_card()
     flash_card_deck.print_card()
@@ -128,3 +155,20 @@ if __name__ == "__main__":
     
     print(len(flash_card_deck.box1))
     print(flash_card_deck.box2[0])
+    
+    flash_card_deck.save_progress()
+    
+    flash_card_deck = create_deck_from_json(path="default_save.json", load_progress=True)
+    print(len(flash_card_deck.box1))
+    print(len(flash_card_deck.box2))
+    flash_card_deck.get_card_set_box1()
+    flash_card_deck.draw_next_card()
+    flash_card_deck.print_card()
+    
+    for i in [0,1,2]:
+        flash_card_deck.increase_score()
+    
+    print(len(flash_card_deck.box1))
+    print(len(flash_card_deck.box2))
+    print(flash_card_deck.box2[0])
+    
