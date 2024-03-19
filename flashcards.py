@@ -55,6 +55,7 @@ class FlashCardDeck:
     
     def get_card_set_box1(self, no_cards=10):
         not_box1 = [card for card in self.flash_cards if card not in self.box1]
+        random.shuffle(not_box1)
         self.box1 = self.box1 + sorted(not_box1, key=lambda flash_card: flash_card.box)[:no_cards]
         for card in self.box1:
             card.box = 1
