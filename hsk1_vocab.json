@@ -12,7 +12,7 @@
     "2": {
         "chinese": "你",
         "pinyin": "nǐ",
-        "english": "you"
+        "english": "you (informal)"
     },
     "3": {
         "chinese": "你们",
@@ -56,7 +56,7 @@
     },
     "11": {
         "chinese": "谁",
-        "pinyin": "shuí",
+        "pinyin": "shuí, shéi",
         "english": "who"
     },
     "12": {
@@ -77,12 +77,12 @@
     "15": {
         "chinese": "怎么",
         "pinyin": "zěnme",
-        "english": "how"
+        "english": "how?"
     },
     "16": {
         "chinese": "怎么样",
         "pinyin": "zěnmeyàng",
-        "english": "how about"
+        "english": "how about, how's that"
     },
     "17": {
         "chinese": "一",
@@ -142,12 +142,12 @@
     "28": {
         "chinese": "个",
         "pinyin": "gè",
-        "english": "one, a, an"
+        "english": "one, a, an, classifier for people/objects"
     },
     "29": {
         "chinese": "岁",
         "pinyin": "suì",
-        "english": "year"
+        "english": "year (classifier)"
     },
     "30": {
         "chinese": "本",
@@ -162,7 +162,7 @@
     "32": {
         "chinese": "块",
         "pinyin": "kuài",
-        "english": "piece"
+        "english": "piece, unit of currency"
     },
     "33": {
         "chinese": "不",
@@ -172,7 +172,7 @@
     "34": {
         "chinese": "没",
         "pinyin": "méi",
-        "english": "no"
+        "english": "no, (negative prefix for verbs)"
     },
     "35": {
         "chinese": "很",
@@ -182,12 +182,12 @@
     "36": {
         "chinese": "太",
         "pinyin": "tài",
-        "english": "too"
+        "english": "too (much)"
     },
     "37": {
         "chinese": "都",
         "pinyin": "dōu",
-        "english": "all"
+        "english": "all, both"
     },
     "38": {
         "chinese": "和",
@@ -197,32 +197,32 @@
     "39": {
         "chinese": "在",
         "pinyin": "zài",
-        "english": "in, at"
+        "english": "in, (located) at"
     },
     "40": {
         "chinese": "的",
         "pinyin": "de",
-        "english": ""
+        "english": "of"
     },
     "41": {
         "chinese": "了",
         "pinyin": "le",
-        "english": ""
+        "english": "(completed action marker)"
     },
     "42": {
         "chinese": "吗",
         "pinyin": "ma",
-        "english": ""
+        "english": "(question tag)"
     },
     "43": {
         "chinese": "呢",
         "pinyin": "ne",
-        "english": ""
+        "english": "(question particle for subjects already mentioned)"
     },
     "44": {
         "chinese": "喂",
         "pinyin": "wèi",
-        "english": "hello"
+        "english": "hello (on telephone)"
     },
     "45": {
         "chinese": "家",
@@ -267,7 +267,7 @@
     "53": {
         "chinese": "上",
         "pinyin": "shàng",
-        "english": "up"
+        "english": "up, on"
     },
     "54": {
         "chinese": "下",
@@ -277,12 +277,12 @@
     "55": {
         "chinese": "前面",
         "pinyin": "qiánmiàn",
-        "english": "front"
+        "english": "front, ahead"
     },
     "56": {
         "chinese": "后面",
         "pinyin": "hòumiàn",
-        "english": "behind"
+        "english": "behind, rear"
     },
     "57": {
         "chinese": "里",
@@ -327,12 +327,12 @@
     "65": {
         "chinese": "月",
         "pinyin": "yuè",
-        "english": "month"
+        "english": "moon, month"
     },
     "66": {
         "chinese": "日",
         "pinyin": "rì",
-        "english": "day"
+        "english": "sun / day"
     },
     "67": {
         "chinese": "星期",
@@ -342,7 +342,7 @@
     "68": {
         "chinese": "点",
         "pinyin": "diǎn",
-        "english": "dot, spot"
+        "english": "dot, spot, a little"
     },
     "69": {
         "chinese": "分钟",
@@ -407,17 +407,17 @@
     "81": {
         "chinese": "先生",
         "pinyin": "xiānsheng",
-        "english": "sir"
+        "english": "sir, mister"
     },
     "82": {
         "chinese": "小姐",
         "pinyin": "xiǎojiě",
-        "english": "Miss"
+        "english": "Miss, young lady"
     },
     "83": {
         "chinese": "衣服",
         "pinyin": "yīfu",
-        "english": "cloth"
+        "english": "cloth, clothes"
     },
     "84": {
         "chinese": "水",
@@ -432,7 +432,7 @@
     "86": {
         "chinese": "米饭",
         "pinyin": "mǐfàn",
-        "english": "rice"
+        "english": "(cooked) rice"
     },
     "87": {
         "chinese": "水果",
@@ -457,7 +457,7 @@
     "91": {
         "chinese": "钱",
         "pinyin": "qián",
-        "english": "money"
+        "english": "money, coin"
     },
     "92": {
         "chinese": "飞机",
@@ -507,7 +507,7 @@
     "101": {
         "chinese": "人",
         "pinyin": "rén",
-        "english": "person"
+        "english": "person, man"
     },
     "102": {
         "chinese": "名字",
@@ -527,12 +527,12 @@
     "105": {
         "chinese": "字",
         "pinyin": "zì",
-        "english": "character"
+        "english": "letter, character"
     },
     "106": {
         "chinese": "桌子",
         "pinyin": "zhuōzi",
-        "english": "desk"
+        "english": "desk, table"
     },
     "107": {
         "chinese": "椅子",
@@ -542,7 +542,7 @@
     "108": {
         "chinese": "谢谢",
         "pinyin": "xièxie",
-        "english": "thank"
+        "english": "to thank"
     },
     "109": {
         "chinese": "不客气",
@@ -557,7 +557,7 @@
     "111": {
         "chinese": "请",
         "pinyin": "qǐng",
-        "english": "please"
+        "english": "to ask, please"
     },
     "112": {
         "chinese": "对不起",
@@ -572,17 +572,17 @@
     "114": {
         "chinese": "是",
         "pinyin": "shì",
-        "english": "be (am, is, are)"
+        "english": "to be (am, is, are)"
     },
     "115": {
         "chinese": "有",
         "pinyin": "yǒu",
-        "english": "have"
+        "english": "to have"
     },
     "116": {
         "chinese": "看",
         "pinyin": "kàn",
-        "english": "look"
+        "english": "to look at"
     },
     "117": {
         "chinese": "听",
@@ -592,42 +592,42 @@
     "118": {
         "chinese": "说话",
         "pinyin": "shuōhuà",
-        "english": "speak"
+        "english": "to speak"
     },
     "119": {
         "chinese": "读",
         "pinyin": "dú",
-        "english": "read"
+        "english": "to read"
     },
     "120": {
         "chinese": "写",
         "pinyin": "xiě",
-        "english": "write"
+        "english": "to write"
     },
     "121": {
         "chinese": "看见",
         "pinyin": "kànjiàn",
-        "english": "see"
+        "english": "to see"
     },
     "122": {
         "chinese": "叫",
         "pinyin": "jiào",
-        "english": "call"
+        "english": "to call"
     },
     "123": {
         "chinese": "来",
         "pinyin": "lái",
-        "english": "come"
+        "english": "to come"
     },
     "124": {
         "chinese": "回",
         "pinyin": "huí",
-        "english": "return"
+        "english": "return, to go back"
     },
     "125": {
         "chinese": "去",
         "pinyin": "qù",
-        "english": "go"
+        "english": "to go"
     },
     "126": {
         "chinese": "吃",
@@ -642,7 +642,7 @@
     "128": {
         "chinese": "睡觉",
         "pinyin": "shuìjiào",
-        "english": "sleep"
+        "english": "sleep, go to bed"
     },
     "129": {
         "chinese": "打电话",
@@ -652,7 +652,7 @@
     "130": {
         "chinese": "做",
         "pinyin": "zuò",
-        "english": "do"
+        "english": "to do"
     },
     "131": {
         "chinese": "买",
@@ -662,32 +662,32 @@
     "132": {
         "chinese": "开",
         "pinyin": "kāi",
-        "english": "open"
+        "english": "to open"
     },
     "133": {
         "chinese": "坐",
         "pinyin": "zuò",
-        "english": "sit"
+        "english": "to sit"
     },
     "134": {
         "chinese": "住",
         "pinyin": "zhù",
-        "english": "live"
+        "english": "to live"
     },
     "135": {
         "chinese": "学习",
         "pinyin": "xuéxí",
-        "english": "study"
+        "english": "to study, learn"
     },
     "136": {
         "chinese": "工作",
         "pinyin": "gōngzuò",
-        "english": "work"
+        "english": "work, job"
     },
     "137": {
         "chinese": "下雨",
         "pinyin": "xiàyǔ",
-        "english": "rain"
+        "english": "to rain"
     },
     "138": {
         "chinese": "爱",
@@ -702,12 +702,12 @@
     "140": {
         "chinese": "想",
         "pinyin": "xiǎng",
-        "english": "want"
+        "english": "want, to think"
     },
     "141": {
         "chinese": "认识",
         "pinyin": "rènshi",
-        "english": "know"
+        "english": "to know"
     },
     "142": {
         "chinese": "会",
@@ -752,7 +752,7 @@
     "150": {
         "chinese": "热",
         "pinyin": "rè",
-        "english": "hot"
+        "english": "hot, heat"
     },
     "151": {
         "chinese": "高兴",
@@ -762,6 +762,6 @@
     "152": {
         "chinese": "漂亮",
         "pinyin": "piàoliàng",
-        "english": "beautiful"
+        "english": "beautiful, pretty"
     }
 }
