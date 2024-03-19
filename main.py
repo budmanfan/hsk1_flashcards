@@ -1,5 +1,9 @@
 import customtkinter as ctk
+from tkinter import filedialog, simpledialog
 import flashcards
+
+global deck
+deck = flashcards.create_deck_from_json()
 
 def refresh_overall_stats():
     l_unseen_cards.configure(text=deck.get_no_unseen())
@@ -10,6 +14,29 @@ def refresh_overall_stats():
 
 def refresh_word_stats():
     return
+
+def b_new_click():
+    global deck
+    name = simpledialog.askstring("Name", "Please enter your name:",
+                                        parent=startup_window)
+    startup_window.destroy()
+    
+    deck = flashcards.create_deck_from_json(name=name)
+    deck.get_card_set_box1()
+    deck.draw_next_card()
+    refresh_overall_stats()
+    main_window.deiconify()
+
+def b_load_click():
+    global deck
+    file_path = filedialog.askopenfilename(title="Select a File",
+                                           filetypes=[("Save Files", "*.json")],
+                                           initialdir='./')
+    startup_window.destroy()
+    deck = flashcards.create_deck_from_json(path=file_path, load_progress=True)
+    deck.draw_next_card()
+    refresh_overall_stats()
+    main_window.deiconify()
 
 def b_answer_show(relx=0.5, rely=0.6):
     b_answer.place(relx=relx, rely=rely, anchor=ctk.CENTER)
@@ -50,6 +77,7 @@ def b_answer_click():
     
 def b_right_click():
     deck.increase_score()
+    deck.save_progress()
     deck.draw_next_card()
     l_main_word.configure(text=deck.get_chinese())
     l_second_word.configure(text=deck.get_pinyin())
@@ -58,13 +86,13 @@ def b_right_click():
     
 def b_wrong_click():
     deck.decrease_score()
+    deck.save_progress()
     deck.draw_next_card()
     l_main_word.configure(text=deck.get_chinese())
     l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
     build_word_page()
-    
-    
+      
 def b_back_click():
     l_main_word.configure(text=deck.get_chinese())
     l_second_word.configure(text=deck.get_pinyin())
@@ -77,16 +105,35 @@ def b_draw_cards_click():
     l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
 
-deck = flashcards.create_deck_from_json()
-
 # Set the theme and color scheme
 ctk.set_appearance_mode("light")  # "light" or "dark"
 ctk.set_default_color_theme("blue")  # Other themes available
 
+# Create startup window
+startup_window_width = 400
+startup_window_height = 200
+
+startup_window = ctk.CTk()
+startup_window.title("HSK1 Flashcards Startup")
+screen_width = startup_window.winfo_screenwidth()
+screen_height = startup_window.winfo_screenheight()
+center_x = int((screen_width/2) - (startup_window_width/2))
+center_y = int((screen_height/2) - (startup_window_height/2))
+startup_window.geometry(f'{startup_window_width}x{startup_window_height}+{center_x}+{center_y}')
+
+b_new = ctk.CTkButton(startup_window, text="New", command=b_new_click, font=("Arial", 24))
+b_new.place(relx=0.3, rely=0.5, anchor=ctk.CENTER)
+b_load = ctk.CTkButton(startup_window, text="Load", command=b_load_click, font=("Arial", 24))
+b_load.place(relx=0.7, rely=0.5, anchor=ctk.CENTER)
+
 # Create the main window
+main_window_width = 400
+main_window_height = 400
 main_window = ctk.CTk()
 main_window.title("HSK1 Flashcards")
-main_window.geometry("400x400")
+center_x = int((screen_width/2) - (main_window_width/2))
+center_y = int((screen_height/2) - (main_window_height/2))
+main_window.geometry(f'{main_window_width}x{main_window_height}+{center_x}+{center_y}')
 
 # Create a label with large text in the middle of the window
 l_main_word = ctk.CTkLabel(main_window, text=deck.get_chinese(), font=("Arial", 72))
@@ -127,9 +174,7 @@ l_title_master_cards.place(relx=0.85, rely=0.75, anchor=ctk.CENTER)
 l_master_cards = ctk.CTkLabel(main_window, text=len(deck.box3), font=("Arial", 12))
 l_master_cards.place(relx=0.85, rely=0.8, anchor=ctk.CENTER)
 
-deck.get_card_set_box1()
-deck.draw_next_card()
-refresh_overall_stats()
+main_window.withdraw()
 
-# Start the GUI event loop
+startup_window.mainloop()
 main_window.mainloop()
