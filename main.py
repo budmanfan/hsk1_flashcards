@@ -13,7 +13,6 @@ def refresh_overall_stats():
     l_learn_cards.configure(text=len(deck.box1))
     l_learned_cards.configure(text=len(deck.box2))
     l_master_cards.configure(text=len(deck.box3))
-    print(deck.active_card.active_score)
 
 def refresh_word_stats():
     return
@@ -86,7 +85,6 @@ def b_answer_click():
     
 def b_sound_click():
     mixer.music.stop()
-    print(os.path.join('soundfiles', deck.active_card.id + '.mp3'))
     mixer.music.load(os.path.join('soundfiles', deck.active_card.id + '.mp3'))
     mixer.music.play()
     
