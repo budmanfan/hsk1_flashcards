@@ -1,6 +1,9 @@
+import os
 import customtkinter as ctk
 from tkinter import filedialog, simpledialog
 import flashcards
+from pygame import mixer
+mixer.init()
 
 global deck
 deck = flashcards.create_deck_from_json()
@@ -20,11 +23,12 @@ def b_new_click():
     name = simpledialog.askstring("Name", "Please enter your name:",
                                         parent=startup_window)
     startup_window.destroy()
-    
     deck = flashcards.create_deck_from_json(name=name)
     deck.get_card_set_box1()
     deck.draw_next_card()
     refresh_overall_stats()
+    l_main_word.configure(text=deck.get_chinese())
+    l_second_word.configure(text=deck.get_pinyin())
     main_window.deiconify()
 
 def b_load_click():
@@ -38,8 +42,11 @@ def b_load_click():
     refresh_overall_stats()
     main_window.deiconify()
 
-def b_answer_show(relx=0.5, rely=0.6):
+def b_answer_show(relx=0.3, rely=0.6):
     b_answer.place(relx=relx, rely=rely, anchor=ctk.CENTER)
+    
+def b_sound_show(relx=0.7, rely=0.6):
+    b_sound.place(relx=relx, rely=rely, anchor=ctk.CENTER)
     
 def b_right_show(relx=0.3, rely=0.6):
     b_right.place(relx=relx, rely=rely, anchor=ctk.CENTER)
@@ -58,10 +65,12 @@ def build_word_page():
     b_wrong.place_forget()
     b_back.place_forget()
     b_answer_show()
+    b_sound_show()
     b_draw_cards_show()
 
 def build_answer_page():
     b_answer.place_forget()
+    b_sound.place_forget()
     b_draw_cards.place_forget()
     b_right_show()
     b_wrong_show()
@@ -74,6 +83,12 @@ def b_answer_click():
     l_second_word.configure(text="")
     l_main_word.configure(font=("Arial", 50))
     build_answer_page()
+    
+def b_sound_click():
+    mixer.music.stop()
+    print(os.path.join('soundfiles', deck.active_card.id + '.mp3'))
+    mixer.music.load(os.path.join('soundfiles', deck.active_card.id + '.mp3'))
+    mixer.music.play()
     
 def b_right_click():
     deck.increase_score()
@@ -145,6 +160,9 @@ l_second_word.place(relx=0.5, rely=0.45, anchor=ctk.CENTER)
 # Create a button at the center bottom of the window
 b_answer = ctk.CTkButton(main_window, text="Answer", command=b_answer_click)
 b_answer_show()
+
+b_sound = ctk.CTkButton(main_window, text="Play sound", command=b_sound_click)
+b_sound_show()
 
 b_right = ctk.CTkButton(main_window, text="Right", command=b_right_click, fg_color="#32CD32")
 b_wrong = ctk.CTkButton(main_window, text="Wrong", command=b_wrong_click, fg_color="#FF6347")
