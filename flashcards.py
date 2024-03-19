@@ -122,7 +122,7 @@ class FlashCardDeck:
         try:
             with open(file_path, 'w', encoding='utf-8') as file:
                 json.dump(vocab_data, file, ensure_ascii=False, indent=4)
-                print("Data saved successfully.")
+                #print("Data saved successfully.")
         except Exception as e:
             print(f"Saving failed! Error: {e}")
     
