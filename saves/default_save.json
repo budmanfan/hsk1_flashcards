@@ -1,0 +1,1379 @@
+{
+    "0": {
+        "chinese": "我",
+        "pinyin": "wǒ",
+        "english": "I, me",
+        "box": 1,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "1": {
+        "chinese": "我们",
+        "pinyin": "wǒmen",
+        "english": "we, us (pl.)",
+        "box": 1,
+        "active_score": 1,
+        "correct_guesses": 1,
+        "total_guesses": 1
+    },
+    "2": {
+        "chinese": "你",
+        "pinyin": "nǐ",
+        "english": "you",
+        "box": 1,
+        "active_score": 1,
+        "correct_guesses": 1,
+        "total_guesses": 1
+    },
+    "3": {
+        "chinese": "你们",
+        "pinyin": "nǐmen",
+        "english": "you (pl.)",
+        "box": 1,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "4": {
+        "chinese": "他",
+        "pinyin": "tā",
+        "english": "he, him",
+        "box": 1,
+        "active_score": 2,
+        "correct_guesses": 2,
+        "total_guesses": 2
+    },
+    "5": {
+        "chinese": "她",
+        "pinyin": "tā",
+        "english": "she, her",
+        "box": 2,
+        "active_score": 1,
+        "correct_guesses": 4,
+        "total_guesses": 4
+    },
+    "6": {
+        "chinese": "他们",
+        "pinyin": "tāmen",
+        "english": "they (male+female / male, pl.)",
+        "box": 1,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "7": {
+        "chinese": "她们",
+        "pinyin": "tāmen",
+        "english": "they (females, pl.)",
+        "box": 2,
+        "active_score": 0,
+        "correct_guesses": 3,
+        "total_guesses": 3
+    },
+    "8": {
+        "chinese": "这 (这儿)",
+        "pinyin": "zhè ( zhèr)",
+        "english": "here, this",
+        "box": 3,
+        "active_score": 0,
+        "correct_guesses": 6,
+        "total_guesses": 6
+    },
+    "9": {
+        "chinese": "那 (那儿)",
+        "pinyin": "nà (nàr)",
+        "english": "there, that",
+        "box": 2,
+        "active_score": 0,
+        "correct_guesses": 3,
+        "total_guesses": 3
+    },
+    "10": {
+        "chinese": "哪（哪儿）",
+        "pinyin": "nǎ (nǎr)",
+        "english": "where",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "11": {
+        "chinese": "谁",
+        "pinyin": "shuí",
+        "english": "who",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "12": {
+        "chinese": "什么",
+        "pinyin": "shén me",
+        "english": "what, why",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "13": {
+        "chinese": "多少",
+        "pinyin": "duōshǎo",
+        "english": "how many, how much",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "14": {
+        "chinese": "几",
+        "pinyin": "jǐ",
+        "english": "a few, how many",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "15": {
+        "chinese": "怎么",
+        "pinyin": "zěnme",
+        "english": "how",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "16": {
+        "chinese": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "english": "how about",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "17": {
+        "chinese": "一",
+        "pinyin": "yī",
+        "english": "one",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "18": {
+        "chinese": "二",
+        "pinyin": "èr",
+        "english": "two",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "19": {
+        "chinese": "三",
+        "pinyin": "sān",
+        "english": "three",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "20": {
+        "chinese": "四",
+        "pinyin": "sì",
+        "english": "four",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "21": {
+        "chinese": "五",
+        "pinyin": "wǔ",
+        "english": "five",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "22": {
+        "chinese": "六",
+        "pinyin": "liù",
+        "english": "six",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "23": {
+        "chinese": "七",
+        "pinyin": "qī",
+        "english": "seven",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "24": {
+        "chinese": "八",
+        "pinyin": "bā",
+        "english": "eight",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "25": {
+        "chinese": "九",
+        "pinyin": "jiǔ",
+        "english": "nine",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "26": {
+        "chinese": "十",
+        "pinyin": "shí",
+        "english": "ten",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "27": {
+        "chinese": "零",
+        "pinyin": "líng",
+        "english": "zero",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "28": {
+        "chinese": "个",
+        "pinyin": "gè",
+        "english": "one, a, an",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "29": {
+        "chinese": "岁",
+        "pinyin": "suì",
+        "english": "year",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "30": {
+        "chinese": "本",
+        "pinyin": "běn",
+        "english": "volume",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "31": {
+        "chinese": "些",
+        "pinyin": "xiē",
+        "english": "some",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "32": {
+        "chinese": "块",
+        "pinyin": "kuài",
+        "english": "piece",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "33": {
+        "chinese": "不",
+        "pinyin": "bù",
+        "english": "no",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "34": {
+        "chinese": "没",
+        "pinyin": "méi",
+        "english": "no",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "35": {
+        "chinese": "很",
+        "pinyin": "hěn",
+        "english": "quite, very",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "36": {
+        "chinese": "太",
+        "pinyin": "tài",
+        "english": "too",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "37": {
+        "chinese": "都",
+        "pinyin": "dōu",
+        "english": "all",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "38": {
+        "chinese": "和",
+        "pinyin": "hé",
+        "english": "and",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "39": {
+        "chinese": "在",
+        "pinyin": "zài",
+        "english": "in, at",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "40": {
+        "chinese": "的",
+        "pinyin": "de",
+        "english": "",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "41": {
+        "chinese": "了",
+        "pinyin": "le",
+        "english": "",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "42": {
+        "chinese": "吗",
+        "pinyin": "ma",
+        "english": "",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "43": {
+        "chinese": "呢",
+        "pinyin": "ne",
+        "english": "",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "44": {
+        "chinese": "喂",
+        "pinyin": "wèi",
+        "english": "hello",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "45": {
+        "chinese": "家",
+        "pinyin": "jiā",
+        "english": "home",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "46": {
+        "chinese": "学校",
+        "pinyin": "xuéxiào",
+        "english": "school",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "47": {
+        "chinese": "饭店",
+        "pinyin": "fàndiàn",
+        "english": "restaurant",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "48": {
+        "chinese": "商店",
+        "pinyin": "shāngdiàn",
+        "english": "store",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "49": {
+        "chinese": "医院",
+        "pinyin": "yīyuàn",
+        "english": "hospital",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "50": {
+        "chinese": "火车站",
+        "pinyin": "huǒchēzhàn",
+        "english": "train station",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "51": {
+        "chinese": "中国",
+        "pinyin": "zhōng guó",
+        "english": "China",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "52": {
+        "chinese": "北京",
+        "pinyin": "běijīng",
+        "english": "Beijing",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "53": {
+        "chinese": "上",
+        "pinyin": "shàng",
+        "english": "up",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "54": {
+        "chinese": "下",
+        "pinyin": "xià",
+        "english": "down",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "55": {
+        "chinese": "前面",
+        "pinyin": "qiánmiàn",
+        "english": "front",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "56": {
+        "chinese": "后面",
+        "pinyin": "hòumiàn",
+        "english": "behind",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "57": {
+        "chinese": "里",
+        "pinyin": "lǐmiàn",
+        "english": "inside",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "58": {
+        "chinese": "今天",
+        "pinyin": "jīntiān",
+        "english": "today",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "59": {
+        "chinese": "明天",
+        "pinyin": "míngtiān",
+        "english": "tomorrow",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "60": {
+        "chinese": "昨天",
+        "pinyin": "zuótiān",
+        "english": "yesterday",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "61": {
+        "chinese": "上午",
+        "pinyin": "shàngwǔ",
+        "english": "morning",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "62": {
+        "chinese": "中午",
+        "pinyin": "zhōngwǔ",
+        "english": "noon",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "63": {
+        "chinese": "下午",
+        "pinyin": "xiàwǔ",
+        "english": "afternoon",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "64": {
+        "chinese": "年",
+        "pinyin": "nián",
+        "english": "year",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "65": {
+        "chinese": "月",
+        "pinyin": "yuè",
+        "english": "month",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "66": {
+        "chinese": "日",
+        "pinyin": "rì",
+        "english": "day",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "67": {
+        "chinese": "星期",
+        "pinyin": "xīngqī",
+        "english": "week",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "68": {
+        "chinese": "点",
+        "pinyin": "diǎn",
+        "english": "dot, spot",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "69": {
+        "chinese": "分钟",
+        "pinyin": "fēnzhōng",
+        "english": "minute",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "70": {
+        "chinese": "现在",
+        "pinyin": "xiànzài",
+        "english": "now",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "71": {
+        "chinese": "时候",
+        "pinyin": "shíhou",
+        "english": "time",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "72": {
+        "chinese": "爸爸",
+        "pinyin": "bàba",
+        "english": "father",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "73": {
+        "chinese": "妈妈",
+        "pinyin": "māma",
+        "english": "mother",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "74": {
+        "chinese": "儿子",
+        "pinyin": "érzi",
+        "english": "son",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "75": {
+        "chinese": "女儿",
+        "pinyin": "nǚér",
+        "english": "daughter",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "76": {
+        "chinese": "老师",
+        "pinyin": "lǎoshī",
+        "english": "teacher",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "77": {
+        "chinese": "学生",
+        "pinyin": "xuéshēng",
+        "english": "student",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "78": {
+        "chinese": "同学",
+        "pinyin": "tóngxué",
+        "english": "shoolmate",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "79": {
+        "chinese": "朋友",
+        "pinyin": "péngyou",
+        "english": "friend",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "80": {
+        "chinese": "医生",
+        "pinyin": "yīshēng",
+        "english": "doctor",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "81": {
+        "chinese": "先生",
+        "pinyin": "xiānsheng",
+        "english": "sir",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "82": {
+        "chinese": "小姐",
+        "pinyin": "xiǎojiě",
+        "english": "Miss",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "83": {
+        "chinese": "衣服",
+        "pinyin": "yīfu",
+        "english": "cloth",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "84": {
+        "chinese": "水",
+        "pinyin": "shuǐ",
+        "english": "water",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "85": {
+        "chinese": "菜",
+        "pinyin": "cài",
+        "english": "vegetable",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "86": {
+        "chinese": "米饭",
+        "pinyin": "mǐfàn",
+        "english": "rice",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "87": {
+        "chinese": "水果",
+        "pinyin": "shuǐguǒ",
+        "english": "fruit",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "88": {
+        "chinese": "苹果",
+        "pinyin": "píngguǒ",
+        "english": "apple",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "89": {
+        "chinese": "茶",
+        "pinyin": "chá",
+        "english": "tea",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "90": {
+        "chinese": "杯子",
+        "pinyin": "bēizi",
+        "english": "cup",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "91": {
+        "chinese": "钱",
+        "pinyin": "qián",
+        "english": "money",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "92": {
+        "chinese": "飞机",
+        "pinyin": "fēijī",
+        "english": "airplane",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "93": {
+        "chinese": "出租车",
+        "pinyin": "chūzūchē",
+        "english": "taxi",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "94": {
+        "chinese": "电视",
+        "pinyin": "diànshì",
+        "english": "television",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "95": {
+        "chinese": "电脑",
+        "pinyin": "diànnǎo",
+        "english": "computer",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "96": {
+        "chinese": "电影",
+        "pinyin": "diànyǐng",
+        "english": "movie",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "97": {
+        "chinese": "天气",
+        "pinyin": "tiānqì",
+        "english": "weather",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "98": {
+        "chinese": "猫",
+        "pinyin": "māo",
+        "english": "cat",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "99": {
+        "chinese": "狗",
+        "pinyin": "gǒu",
+        "english": "dog",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "100": {
+        "chinese": "东西",
+        "pinyin": "dōngxi",
+        "english": "thing",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "101": {
+        "chinese": "人",
+        "pinyin": "rén",
+        "english": "person",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "102": {
+        "chinese": "名字",
+        "pinyin": "míngzi",
+        "english": "name",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "103": {
+        "chinese": "书",
+        "pinyin": "shū",
+        "english": "book",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "104": {
+        "chinese": "汉语",
+        "pinyin": "hànyǔ",
+        "english": "mandarin Chinese",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "105": {
+        "chinese": "字",
+        "pinyin": "zì",
+        "english": "character",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "106": {
+        "chinese": "桌子",
+        "pinyin": "zhuōzi",
+        "english": "desk",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "107": {
+        "chinese": "椅子",
+        "pinyin": "yǐzi",
+        "english": "chair",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "108": {
+        "chinese": "谢谢",
+        "pinyin": "xièxie",
+        "english": "thank",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "109": {
+        "chinese": "不客气",
+        "pinyin": "búkèqì",
+        "english": "you are welcome",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "110": {
+        "chinese": "再见",
+        "pinyin": "zàijiàn",
+        "english": "good-bye",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "111": {
+        "chinese": "请",
+        "pinyin": "qǐng",
+        "english": "please",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "112": {
+        "chinese": "对不起",
+        "pinyin": "duìbùqǐ",
+        "english": "sorry",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "113": {
+        "chinese": "没关系",
+        "pinyin": "méiguānxì",
+        "english": "It doesn’t matter",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "114": {
+        "chinese": "是",
+        "pinyin": "shì",
+        "english": "be (am, is, are)",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "115": {
+        "chinese": "有",
+        "pinyin": "yǒu",
+        "english": "have",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "116": {
+        "chinese": "看",
+        "pinyin": "kàn",
+        "english": "look",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "117": {
+        "chinese": "听",
+        "pinyin": "tīng",
+        "english": "listen",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "118": {
+        "chinese": "说话",
+        "pinyin": "shuōhuà",
+        "english": "speak",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "119": {
+        "chinese": "读",
+        "pinyin": "dú",
+        "english": "read",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "120": {
+        "chinese": "写",
+        "pinyin": "xiě",
+        "english": "write",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "121": {
+        "chinese": "看见",
+        "pinyin": "kànjiàn",
+        "english": "see",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "122": {
+        "chinese": "叫",
+        "pinyin": "jiào",
+        "english": "call",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "123": {
+        "chinese": "来",
+        "pinyin": "lái",
+        "english": "come",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "124": {
+        "chinese": "回",
+        "pinyin": "huí",
+        "english": "return",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "125": {
+        "chinese": "去",
+        "pinyin": "qù",
+        "english": "go",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "126": {
+        "chinese": "吃",
+        "pinyin": "chī",
+        "english": "eat",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "127": {
+        "chinese": "喝",
+        "pinyin": "hē",
+        "english": "drink",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "128": {
+        "chinese": "睡觉",
+        "pinyin": "shuìjiào",
+        "english": "sleep",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "129": {
+        "chinese": "打电话",
+        "pinyin": "dǎdiànhuà",
+        "english": "call up",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "130": {
+        "chinese": "做",
+        "pinyin": "zuò",
+        "english": "do",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "131": {
+        "chinese": "买",
+        "pinyin": "mǎi",
+        "english": "buy",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "132": {
+        "chinese": "开",
+        "pinyin": "kāi",
+        "english": "open",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "133": {
+        "chinese": "坐",
+        "pinyin": "zuò",
+        "english": "sit",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "134": {
+        "chinese": "住",
+        "pinyin": "zhù",
+        "english": "live",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "135": {
+        "chinese": "学习",
+        "pinyin": "xuéxí",
+        "english": "study",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "136": {
+        "chinese": "工作",
+        "pinyin": "gōngzuò",
+        "english": "work",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "137": {
+        "chinese": "下雨",
+        "pinyin": "xiàyǔ",
+        "english": "rain",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "138": {
+        "chinese": "爱",
+        "pinyin": "ài",
+        "english": "love",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "139": {
+        "chinese": "喜欢",
+        "pinyin": "xǐhuān",
+        "english": "love, like",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "140": {
+        "chinese": "想",
+        "pinyin": "xiǎng",
+        "english": "want",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "141": {
+        "chinese": "认识",
+        "pinyin": "rènshi",
+        "english": "know",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "142": {
+        "chinese": "会",
+        "pinyin": "huì",
+        "english": "can",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "143": {
+        "chinese": "能",
+        "pinyin": "néng",
+        "english": "can, be able to",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "144": {
+        "chinese": "好",
+        "pinyin": "hǎo",
+        "english": "good",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "145": {
+        "chinese": "大",
+        "pinyin": "dà",
+        "english": "big",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "146": {
+        "chinese": "小",
+        "pinyin": "xiǎo",
+        "english": "small",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "147": {
+        "chinese": "多",
+        "pinyin": "duō",
+        "english": "many, much",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "148": {
+        "chinese": "少",
+        "pinyin": "shǎo",
+        "english": "few, little",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "149": {
+        "chinese": "冷",
+        "pinyin": "lěng",
+        "english": "cold",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "150": {
+        "chinese": "热",
+        "pinyin": "rè",
+        "english": "hot",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "151": {
+        "chinese": "高兴",
+        "pinyin": "gāoxìng",
+        "english": "happy",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    },
+    "152": {
+        "chinese": "漂亮",
+        "pinyin": "piàoliàng",
+        "english": "beautiful",
+        "box": 0,
+        "active_score": 0,
+        "correct_guesses": 0,
+        "total_guesses": 0
+    }
+}
