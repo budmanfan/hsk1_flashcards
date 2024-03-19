@@ -107,7 +107,7 @@ class FlashCardDeck:
             
     def save_progress(self):
         vocab_data = {}
-        file_path = self.name + "_save.json"
+        file_path = "./saves/" + self.name + "_save.json"
         for flash_card in self.flash_cards:
             vocab_data[flash_card.id] = {
                 "chinese":              flash_card.chinese,
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     
     flash_card_deck.save_progress()
     
-    flash_card_deck = create_deck_from_json(path="default_save.json", load_progress=True)
+    flash_card_deck = create_deck_from_json(path="./saves/default_save.json", load_progress=True)
     print(len(flash_card_deck.box1))
     print(len(flash_card_deck.box2))
     flash_card_deck.get_card_set_box1()

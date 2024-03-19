@@ -31,7 +31,7 @@ def b_load_click():
     global deck
     file_path = filedialog.askopenfilename(title="Select a File",
                                            filetypes=[("Save Files", "*.json")],
-                                           initialdir='./')
+                                           initialdir='./saves')
     startup_window.destroy()
     deck = flashcards.create_deck_from_json(path=file_path, load_progress=True)
     deck.draw_next_card()
