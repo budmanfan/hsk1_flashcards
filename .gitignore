@@ -161,3 +161,4 @@ cython_debug/
 
 
 *_save.json
+.DS_Store
