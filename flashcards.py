@@ -59,19 +59,30 @@ class FlashCardDeck:
         self.box1 = self.box1 + sorted(not_box1, key=lambda flash_card: flash_card.box)[:no_cards]
         for card in self.box1:
             card.box = 1
+    
         
     def draw_next_card(self):
+        
+        def weighted_random_choice(lst):
+            if len(lst) <= 1:
+                return lst[0]
+            weights = range(len(lst)-1, -1, -1)
+            chosen = random.choices(lst, weights=weights, k=1)[0]
+            lst.remove(chosen)
+            lst.append(chosen)
+            return chosen
+        
         r = random.random()
-        if len(self.box3) > 0 and r < 0.05: #random chance to draw mastered card
-            self.active_card = random.choice(self.box3)
-        elif len(self.box2) > 0 and r < 0.2: #random chance to draw learned card
-            self.active_card = random.choice(self.box2)
+        if len(self.box3) > 0 and r < 0.8: #random chance to draw mastered card
+            self.active_card = weighted_random_choice(self.box3)
+        elif len(self.box2) > 0 and r < 0.15: #random chance to draw learned card
+            self.active_card = weighted_random_choice(self.box2)
         elif len(self.box1) > 0:
-            self.active_card = random.choice(self.box1)
+            self.active_card = weighted_random_choice(self.box1)
         elif len(self.box1) == 0 and len(self.box2) > 0:
-            self.active_card = random.choice(self.box2)
+            self.active_card = weighted_random_choice(self.box2)
         elif len(self.box2) == 0 and len(self.box3) > 0:
-            self.active_card = random.choice(self.box3)
+            self.active_card = weighted_random_choice(self.box3)
         else:
             self.active_card = FlashCard("-1", "No Cards", "No Cards", "")
         
