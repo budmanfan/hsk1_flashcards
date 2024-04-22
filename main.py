@@ -3,6 +3,7 @@ import customtkinter as ctk
 from tkinter import filedialog, simpledialog
 import flashcards
 from pygame import mixer
+import re
 mixer.init()
 
 global deck
@@ -35,10 +36,14 @@ def b_load_click():
     file_path = filedialog.askopenfilename(title="Select a File",
                                            filetypes=[("Save Files", "*.json")],
                                            initialdir='./saves')
+    name = re.split(r'/|_', file_path)[-2]
+    print(name)
     startup_window.destroy()
-    deck = flashcards.create_deck_from_json(path=file_path, load_progress=True)
+    deck = flashcards.create_deck_from_json(path=file_path, name=name, load_progress=True)
     deck.draw_next_card()
     refresh_overall_stats()
+    l_main_word.configure(text=deck.get_chinese())
+    l_second_word.configure(text=deck.get_pinyin())
     main_window.deiconify()
 
 def b_answer_show(relx=0.3, rely=0.6):
