@@ -73,7 +73,7 @@ class FlashCardDeck:
             return chosen
         
         r = random.random()
-        if len(self.box3) > 0 and r < 0.8: #random chance to draw mastered card
+        if len(self.box3) > 0 and r < 0.08: #random chance to draw mastered card
             self.active_card = weighted_random_choice(self.box3)
         elif len(self.box2) > 0 and r < 0.15: #random chance to draw learned card
             self.active_card = weighted_random_choice(self.box2)
