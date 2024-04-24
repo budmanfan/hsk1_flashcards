@@ -77,10 +77,25 @@ class FlashCardDeck:
             self.active_card = weighted_random_choice(self.box3)
         elif len(self.box2) > 0 and r < 0.15: #random chance to draw learned card
             self.active_card = weighted_random_choice(self.box2)
-        elif len(self.box1) > 0:
+        elif len(self.box1) > 3:
             self.active_card = weighted_random_choice(self.box1)
-        elif len(self.box1) == 0 and len(self.box2) > 0:
+        elif 0 < len(self.box1) <= 3 and len(self.box2) > 0:
+            if r < 0.8:
+                self.active_card = weighted_random_choice(self.box2)
+            else:
+                self.active_card = weighted_random_choice(self.box1)
+        elif 0 < len(self.box1) <= 3 and len(self.box3) > 0:
+            if r < 0.8:
+                self.active_card = weighted_random_choice(self.box3)
+            else:
+                self.active_card = weighted_random_choice(self.box1)
+        elif len(self.box1) == 0 and len(self.box2) > 3:
             self.active_card = weighted_random_choice(self.box2)
+        elif len(self.box1) == 0 and  0 < len(self.box2) <= 3:
+            if r < 0.8:
+                self.active_card = weighted_random_choice(self.box3)
+            else:
+                self.active_card = weighted_random_choice(self.box2)
         elif len(self.box2) == 0 and len(self.box3) > 0:
             self.active_card = weighted_random_choice(self.box3)
         else:
