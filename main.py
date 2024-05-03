@@ -101,6 +101,7 @@ def b_right_click():
     l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
     build_word_page()
+    b_sound_click()
     
 def b_wrong_click():
     deck.decrease_score()
@@ -110,6 +111,7 @@ def b_wrong_click():
     l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
     build_word_page()
+    b_sound_click()
       
 def b_back_click():
     l_main_word.configure(text=deck.get_chinese())
