@@ -72,31 +72,33 @@ class FlashCardDeck:
             lst.append(chosen)
             return chosen
         
-        r = random.random()
-        if len(self.box3) > 0 and r < 0.08: #random chance to draw mastered card
+        def rng():
+            return random.random()
+        
+        if len(self.box3) > 0 and rng() < 0.08: #random chance to draw mastered card
             self.active_card = weighted_random_choice(self.box3)
-        elif len(self.box2) > 0 and r < 0.15: #random chance to draw learned card
+        elif len(self.box2) > 0 and rng() < 0.15: #random chance to draw learned card
             self.active_card = weighted_random_choice(self.box2)
+            
         elif len(self.box1) > 3:
             self.active_card = weighted_random_choice(self.box1)
-        elif 0 < len(self.box1) <= 3 and len(self.box2) > 0:
-            if r < 0.8:
+        elif len(self.box1) > 0:
+            if rng() < 0.8 and len(box2) > 3:
                 self.active_card = weighted_random_choice(self.box2)
-            else:
-                self.active_card = weighted_random_choice(self.box1)
-        elif 0 < len(self.box1) <= 3 and len(self.box3) > 0:
-            if r < 0.8:
+            elif rng() < 0.8 and len(box3) > 3:
                 self.active_card = weighted_random_choice(self.box3)
             else:
                 self.active_card = weighted_random_choice(self.box1)
-        elif len(self.box1) == 0 and len(self.box2) > 3:
-            self.active_card = weighted_random_choice(self.box2)
-        elif len(self.box1) == 0 and  0 < len(self.box2) <= 3:
-            if r < 0.8:
+                
+        elif len(self.box2) > 3:
+            self.active_card = weighted_random_choice(self.box2)    
+        elif len(self.box2) > 0:
+            if rng() < 0.8 and len(box3) > 3:
                 self.active_card = weighted_random_choice(self.box3)
             else:
                 self.active_card = weighted_random_choice(self.box2)
-        elif len(self.box2) == 0 and len(self.box3) > 0:
+                
+        elif len(self.box3) > 0:
             self.active_card = weighted_random_choice(self.box3)
         else:
             self.active_card = FlashCard("-1", "No Cards", "No Cards", "")
