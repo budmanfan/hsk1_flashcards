@@ -64,18 +64,36 @@ def b_back_show(relx=0.1, rely=0.1):
 def b_draw_cards_show():
     b_draw_cards.place(relx=0.85, rely=0.1, anchor=ctk.CENTER)
     
+def cb_displ_hanzi_show():
+    cb_displ_hanzi.place(relx=0.5, rely=0.7, anchor=ctk.CENTER)
+    
+def cb_displ_pinyin_show():
+    cb_displ_pinyin.place(relx=0.65, rely=0.7, anchor=ctk.CENTER)
+    
 def build_word_page():
     b_right.place_forget()
     b_wrong.place_forget()
     b_back.place_forget()
+    if display_hanzi.get():
+        l_main_word.configure(text=deck.get_chinese())
+    else:
+        l_main_word.configure(text="")
+    if display_pinyin.get():
+        l_second_word.configure(text=deck.get_pinyin())
+    else:
+        l_second_word.configure(text="")
     b_answer_show()
     b_sound_show()
     b_draw_cards_show()
+    cb_displ_hanzi_show()
+    cb_displ_pinyin_show()
 
 def build_answer_page():
     b_answer.place_forget()
     b_sound.place_forget()
     b_draw_cards.place_forget()
+    cb_displ_hanzi.place_forget()
+    cb_displ_pinyin.place_forget()
     b_right_show()
     b_wrong_show()
     b_back_show()
@@ -97,8 +115,6 @@ def b_right_click():
     deck.increase_score()
     deck.save_progress()
     deck.draw_next_card()
-    l_main_word.configure(text=deck.get_chinese())
-    l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
     build_word_page()
     b_sound_click()
@@ -107,23 +123,30 @@ def b_wrong_click():
     deck.decrease_score()
     deck.save_progress()
     deck.draw_next_card()
-    l_main_word.configure(text=deck.get_chinese())
-    l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
     build_word_page()
     b_sound_click()
       
 def b_back_click():
-    l_main_word.configure(text=deck.get_chinese())
-    l_second_word.configure(text=deck.get_pinyin())
     build_word_page()
     
 def b_draw_cards_click():
     deck.get_card_set_box1()
     deck.draw_next_card()
-    l_main_word.configure(text=deck.get_chinese())
-    l_second_word.configure(text=deck.get_pinyin())
     refresh_overall_stats()
+    build_word_page()
+    
+def cb_displ_hanzi_change():
+    if display_hanzi.get():
+        l_main_word.configure(text=deck.get_chinese())
+    else:
+        l_main_word.configure(text="")
+        
+def cb_displ_pinyin_change():
+    if display_pinyin.get():
+        l_second_word.configure(text=deck.get_pinyin())
+    else:
+        l_second_word.configure(text="")
 
 # Set the theme and color scheme
 ctk.set_appearance_mode("light")  # "light" or "dark"
@@ -178,24 +201,34 @@ b_draw_cards_show()
 
 # Overall Stats Label
 l_title_unseen_cards = ctk.CTkLabel(main_window, text='Unseen Cards', font=("Arial", 12))
-l_title_unseen_cards.place(relx=0.15, rely=0.75, anchor=ctk.CENTER)
+l_title_unseen_cards.place(relx=0.15, rely=0.85, anchor=ctk.CENTER)
 l_unseen_cards = ctk.CTkLabel(main_window, text=deck.get_no_unseen(), font=("Arial", 12))
-l_unseen_cards.place(relx=0.15, rely=0.8, anchor=ctk.CENTER)
+l_unseen_cards.place(relx=0.15, rely=0.9, anchor=ctk.CENTER)
 
 l_title_learn_cards = ctk.CTkLabel(main_window, text='Learning Now', font=("Arial", 12))
-l_title_learn_cards.place(relx=0.3766, rely=0.75, anchor=ctk.CENTER)
+l_title_learn_cards.place(relx=0.3766, rely=0.85, anchor=ctk.CENTER)
 l_learn_cards = ctk.CTkLabel(main_window, text=len(deck.box1), font=("Arial", 12))
-l_learn_cards.place(relx=0.3766, rely=0.8, anchor=ctk.CENTER)
+l_learn_cards.place(relx=0.3766, rely=0.9, anchor=ctk.CENTER)
 
 l_title_learned_cards = ctk.CTkLabel(main_window, text='Learned Cards', font=("Arial", 12))
-l_title_learned_cards.place(relx=0.6233, rely=0.75, anchor=ctk.CENTER)
+l_title_learned_cards.place(relx=0.6233, rely=0.85, anchor=ctk.CENTER)
 l_learned_cards = ctk.CTkLabel(main_window, text=len(deck.box2), font=("Arial", 12))
-l_learned_cards.place(relx=0.6233, rely=0.8, anchor=ctk.CENTER)
+l_learned_cards.place(relx=0.6233, rely=0.9, anchor=ctk.CENTER)
 
 l_title_master_cards = ctk.CTkLabel(main_window, text='Mastered Cards', font=("Arial", 12))
-l_title_master_cards.place(relx=0.85, rely=0.75, anchor=ctk.CENTER)
+l_title_master_cards.place(relx=0.85, rely=0.85, anchor=ctk.CENTER)
 l_master_cards = ctk.CTkLabel(main_window, text=len(deck.box3), font=("Arial", 12))
-l_master_cards.place(relx=0.85, rely=0.8, anchor=ctk.CENTER)
+l_master_cards.place(relx=0.85, rely=0.9, anchor=ctk.CENTER)
+
+display_hanzi = ctk.BooleanVar(value=True)
+cb_displ_hanzi = ctk.CTkCheckBox(main_window, text='汉字', variable=display_hanzi, onvalue=True, offvalue=False, command=cb_displ_hanzi_change,
+                                 checkbox_height=12, checkbox_width=12, corner_radius=2, font=("Arial", 11))
+cb_displ_hanzi_show()
+
+display_pinyin = ctk.BooleanVar(value=True)
+cb_displ_pinyin = ctk.CTkCheckBox(main_window, text='pinyin', variable=display_pinyin, onvalue=True, offvalue=False, command=cb_displ_pinyin_change,
+                                  checkbox_height=12, checkbox_width=12, corner_radius=2, font=("Arial", 11))
+cb_displ_pinyin_show()
 
 main_window.withdraw()
 
