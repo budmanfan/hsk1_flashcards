@@ -83,9 +83,9 @@ class FlashCardDeck:
         elif len(self.box1) > 3:
             self.active_card = weighted_random_choice(self.box1)
         elif len(self.box1) > 0:
-            if rng() < 0.8 and len(box2) > 3:
+            if rng() < 0.8 and len(self.box2) > 3:
                 self.active_card = weighted_random_choice(self.box2)
-            elif rng() < 0.8 and len(box3) > 3:
+            elif rng() < 0.8 and len(self.box3) > 3:
                 self.active_card = weighted_random_choice(self.box3)
             else:
                 self.active_card = weighted_random_choice(self.box1)
@@ -93,7 +93,7 @@ class FlashCardDeck:
         elif len(self.box2) > 3:
             self.active_card = weighted_random_choice(self.box2)    
         elif len(self.box2) > 0:
-            if rng() < 0.8 and len(box3) > 3:
+            if rng() < 0.8 and len(self.box3) > 3:
                 self.active_card = weighted_random_choice(self.box3)
             else:
                 self.active_card = weighted_random_choice(self.box2)
